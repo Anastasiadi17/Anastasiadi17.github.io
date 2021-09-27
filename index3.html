@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style3.css">
+        <title> Exercise 3 </title>
+    </head>
+<body class="main">
+    <header class="headerblock">
+        <img class="logo" src="logo.jpg" alt="logo" />
+        <div class="header">
+            <h1 class="main_header"> Лабораторная №3 </h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <h3><a href="#links">Гиперссылки</a> <a href="#table">Таблица</a> <a href="#form">Форма</a> <a href="#author">Футер</a></h3>
+    </nav>
+<div id="cont">
+    <div class="contentblock" id="links">
+        <h2 class="h2">Список гиперссылок</h2>
+    <ol>
+	  <li> <a href="http://example.com"> 1) Абсолютная гиперссылка на главную страницу сайта example.com</a> </li>
+	  <li> <a href="https://example.com"> 2) Абсолютная на главную сайта example.com в протоколе https</a> </li>
+	  <li> <a href="ftp://example.com/file.txt"> 3) Ссылка на файл на сервере FTP без авторизации</a> </li>
+	  <li> <a href="ftp://user:password@example.com/file.txt"> 4) Ссылка на файл на сервере FTP с авторизацией</a> </li>
+	  <li> <a href="https://example.com#about"> 5) Ссылка на фрагмент страницы некоторого сайта</a> </li>
+	  <li> <a href="index.html#list_of_links"> 6) Ссылка на фрагмент текущей страницы</a> </li>
+	  <li> <a href="https://example.com?parameter=value&color=green"> 7) Ссылка с двумя параметрами в URL</a> </li>
+	  <li> <a href="https://example.com/help" title="help for users"> 8) Список ссылок основной навигации сайта с подписями title</a> </li>
+	  <li> <a> 9) Cсылка без href</a> </li>
+	  <li> <a href=""> 10) Ссылка с пустым href</a> </li>
+	  <li> <a href="http://example.com" rel="nofollow"> 11) Cсылка, по которой запрещен переход поисковикам</a> </li>
+	  <li> <!--noindex--><a href="http://example.com" rel="nofollow"> 12) Запрещенная для индексации поисковиками</a><!--noindex--></li>
+	  <li> <p> 13)  В нашем <a href="https://www.kubsu.ru/"> КубГУ </a> всегда открыты двери талантливым студентам! </p>
+	  <li> <a href="https://dcactus.ru/cvetok-edelvejs-vyrashhivanie-i-uxod/"><img src="ed.jpg" width="50" height="50" alt="14) Ссылка-изображение"></a> </li>
+	  <li>
+	    <p>а) <img src="sob1.jpg" usemap="#map1" width="100" height="100" alt="15) Ссылка из прямоугольной области картинки"></p>
+          <p><map name="map1">
+	      <area shape="rect" alt="1" coords="10,10,90,90" href="https://www.sobaka.ru/city/science/97523">
+	    </map></p>
+			<p>б) <img src="sob2.jpg" usemap="#map2" width="100" height="100" alt="Ссылка из круглой области картинки">
+			  <p><map name="map2">
+			  <area shape="circle" alt="2" coords="50,50,45" href="https://www.gorodskievesti.ru/2020/08/21/pogibla-nemetskaya-ovcharka/">
+			</map></p>
+	  </li>
+	  <li> <a href="demo.html"> 16) Относительная на страницу в текущем каталоге</a></li>
+	  <li> <a href="about/form.html"> 17) Относительная на страницу в каталоге about</a></li>
+	  <li> <a href="../demo.html"> 18) Относительная на страницу в каталоге уровнем выше текущего</a></li>
+	  <li> <a href="../../demo.html"> 19) Относительная на страницу в каталоге двумя уровнями выше</a></li>
+	  <li> <a href="/"> 20) Сокращенная на главную</a></li>
+	  <li> <a href="#list_of_links"> 21) Cокращенная ссылка на внутреннюю</a></li>
+	</ol>
+    </div>
+	
+    <div class="contentblock" id="table">
+        <h2 class="h2">Таблица</h2>
+        <table class="table">
+            <tr class="table_even">
+                <th>Столбец 1</th>
+                <th>Столбец 2</th>
+                <th>Столбец 3</th>
+                <th>Столбец 4</th>
+            </tr>
+            <tr class="table_odd">
+			    <td>5</td>
+                <td>8</td>
+                <td>131</td>
+                <td>44</td> 
+            </tr>
+            <tr class="table_even">
+                <td colspan="4">18 + 16 + 34 + 67</td>
+            </tr>
+            <tr class="table_odd">
+                <td>11</td>
+                <td colspan="2">22</td>
+                <td>33</td>
+            </tr>
+            <tr class="table_even">
+                <td colspan="2">48 + 52</td>
+                <td colspan="2">636 + 364</td>
+            </tr>
+
+            <tr class="table_odd">
+                <td>1000</td>
+                <td colspan="2">2000</td>
+				<td>5000</td>
+            </tr>
+            <tr class="table_even">
+			    <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td> 
+            </tr>
+        </table>
+    </div>
+	
+    <div class="contentblock" id="form">
+        <h2 class="h2">Форма</h2>
+        <form action="URL_отправки_данных" method="POST" class="form">
+             Введите имя:<br />
+        <input name="field1"
+          value="Jack" />
+          <br />
+      <label>
+        Введите свой email:<br />
+        <input name="field3"
+          value="example@mail.ru"
+          type="email" />
+      </label><br />
+      <label>
+        Текстовое поле даты:<br />
+        <input name="field3"
+          value="2021-09-12"
+          type="date" />
+      </label><br />
+      Пол:<br />
+      <label><input type="radio" checked="checked" name="radio1" value="val1" />мужской</label>
+      <label><input type="radio" name="radio1" value="val2" />женский</label><br />
+	  Количество конечностей:<br />
+      <label><input type="radio" name="radio2" value="val1" />2 ноги, 2 руки</label>
+	  <label><input type="radio" name="radio2" value="val2" />2 ноги, 1 рука</label>
+	  <label><input type="radio" name="radio2" value="val2" />1 нога,  2 руки</label>
+      <label><input type="radio" checked="checked" name="radio2" value="val3" />1 рука, 1 нога</label><br />	
+	  Сверхспособности:<br />
+        <label><select name="field4"
+          multiple="multiple">
+          <option value="val1">Бессмертие</option>
+          <option value="val2" selected="selected">Прохождение скозь стены</option>
+		  <option value="val3">Левитация</option>
+          <option value="val4">Чтение мыслей</option>
+        </select>
+      </label><br />
+	  <label>
+        Биография:<br />
+        <textarea name="field5">Напишите о себе</textarea>
+      </label><br />
+      <label><input type="checkbox" name="check-1" /> с контрактом ознакомлен (а) </label>
+      <input type="submit" value="Отправить" />
+    </form> 
+	
+    </div>
+    <footer class="footer" id="author">
+        <h5>© Анастасиади Алексей</h5>
+    </footer>
+</div>
+</body>
+</html>
