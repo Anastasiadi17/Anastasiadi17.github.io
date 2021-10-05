@@ -1,0 +1,77 @@
+#link_1, #link_2, #link_3{
+    background-color: #FFDE00;
+    font-family: fantasy;
+}
+
+#bf_list{
+    background-color: #f5fab1;
+	font-family: "Arial", monotype;
+}
+
+#content table{
+    background-color: #81dce3;
+	font-family: "Arial", monotype;
+}
+
+#form{
+	background-color: #8cffd1;
+	text-align: center;
+    font-size: 12pt;
+    font-family: "Arial", monotype;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+header img{
+	height: 150px;
+	width: 150px;
+}
+
+form select{
+    background-color: #e6f5e6;
+}
+
+form input{
+    background-color: #e6f5e6;
+}
+
+form textarea{
+    background-color: #e6f5e6;
+}
+
+header aside{
+	font-family: "Arial", monotype;
+	vertical-align: middle;
+    height: 100%;
+}
+
+header main, header aside{
+    background-color: #f2bc85;
+    font-family: fantasy;
+    vertical-align: middle;
+    height: 100%;
+}
+
+table td, th{
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+.table_odd {
+    background-color:#988feb;
+}
+
+.table_even {
+    background-color:#db9eac;
+}
+
+body footer{
+    background-color:#cfb6f2; 
+    font-size: 10pt;
+    font-family: "Arial", monotype;
+    font-weight: bold;
+    line-height: 120%; 
+}
