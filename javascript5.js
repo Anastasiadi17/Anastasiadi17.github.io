@@ -6,7 +6,7 @@
     if(re.test(f1.value) && re.test(f2.value)){
       r.innerHTML = parseInt(f1.value) * parseInt(f2.value);
     } else{
-      r.innerHTML = "Введите корректные данные";
+      r.innerHTML = "Введены некорректные данные. Попробуйте ещё раз!";
     }
     return false;
   }
