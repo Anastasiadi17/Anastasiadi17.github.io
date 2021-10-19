@@ -3,7 +3,7 @@ function getPrice(amount, type) {
 	if (amount != 0) {
 		result.innerHTML = type * amount;
 	} else {
-		result.innerHTML = "введите корректные данные";
+		result.innerHTML = "Введите корректные данные";
 	}
 }
 
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 	console.log("DOM fully loaded and parsed");
     let radioListener = "";
 	let amount = 0;
-	let typeAll = [99999, 1200, 8000];
+	let typeAll = [1000, 35000, 6500];
 	let type = typeAll[0];
     let flag_1 = true, flag_2=true, flag_3=true;
 	let result = document.getElementById("result");
@@ -55,17 +55,17 @@ window.addEventListener('DOMContentLoaded', function(event) {
 		getPrice(amount, type);
 		}
 
-            let s = document.getElementsByName("goods");
+            let s = document.getElementsByName("goods_type");
 	        s[0].addEventListener("change", function(event) {
 		        let select = event.target;
 		        let radios = document.getElementById("options");
 		        let checkbox = document.getElementById("property");
-		    if (select.value == "zayt") {
+		    if (select.value == "racushka") {
 			    radios.style.display = "none";
 			    checkbox.style.display = "none";
 			    type = typeAll[0];
 			    getPrice(amount, type);
-		    } else if (select.value == "anas") {
+		    } else if (select.value == "clocks") {
 			    radios.style.display = "none";
 			    checkbox.style.display = "block";
 			    type = typeAll[1];
@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
             let c = document.getElementsByName("property");
 	        c[0].addEventListener("change", function(event) {
 		        if (event.target.checked && amount != 0) {
-			        result.innerHTML = (type - 1000) * amount;
+			        result.innerHTML = (type + 600) * amount;
                     flag_2 = false;
 					flag_3 = false;
 		        } else {
@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 
 		} else {
 			amount = 0;
-			result.innerHTML = "введите корректные данные";
+			result.innerHTML = "Введите корректные данные";
 		}
 		amountHTML.blur();
 	});
