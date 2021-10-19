@@ -10,7 +10,7 @@ function getPrice(amount, type) {
 function getPriceOptions(amount, type, option) {
 	let result = document.getElementById("result");
 	if (amount == 0) {
-		result.innerHTML = "введите корректные данные";
+		result.innerHTML = "Введите корректные данные";
 	} else {
 		switch (option) {
 			case "o1":
