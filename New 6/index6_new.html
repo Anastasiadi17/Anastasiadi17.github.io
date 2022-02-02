@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+      <title>Лабораторная 6</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="style6_new.css"/>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+  <div class="container-fluid">
+        <div class="text-center px-2">
+	  <div id="calc" class="calc mt-2 order-4">
+	 <div id="nazvanye" class="col-12 px-0 border border-dark rounded">
+	   <h2 class="mb-2">Калькулятор стоимости</h2>
+	 </div>
+          <div id="telo" class="col-11 mt-1 pb-1 mx-auto px-0 border border-dark rounded">
+        <form>
+          <label> Количество нужного товара:<br />
+            <input class="pole" name="pole1" type="text" />
+          </label>
+          <select name="prodType">
+           <option value="1">Ракушка</option>
+           <option value="2">Картина</option>
+           <option value="3">Часы "Rolex"</option>
+          </select>
+         <div class="prodOptions" id="prodOptions">
+           <label><input type="radio" name="Options" id="option1" value="option1"> Натюрморт</label>
+           <label><input type="radio" name="Options" id="option2" value="option2"> Пейзаж</label>
+           <label><input type="radio" name="Options" id="option3" value="option3"> Портрет</label>
+         </div>
+         <div class="checkbox1" id="checkbox1">
+         <label><input type="checkbox" name="prop1" id="ch1"> с подсветкой</label>
+         </div>
+        </form>
+	   </div>
+	    <div id="resultat" class="col-10 mt-1 pb-1 mx-auto px-0 border border-dark rounded">
+		  <div id="Stoimost">Стоимость товара(-ов)</div>
+		</div>
+      </div>
+	 </div>
+	</div>
+	  
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="javascript6_new.js"></script>
+	</body>
+</html>
